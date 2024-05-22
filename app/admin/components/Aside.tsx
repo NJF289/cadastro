@@ -27,19 +27,6 @@ export default function Aside({className}:any) {
                        Curso
                     </Button>
                     </a>
-                <h2 className="font-bold">Configuração</h2>
-                <a href="/admin">
-                    <Button variant="ghost">
-                        <BookAIcon/>
-                       Conta
-                    </Button>
-                </a>
-                <a href="/admin">
-                    <Button variant="ghost">
-                        <FolderPen/>
-                       Nome
-                    </Button>
-                </a>
             </div>
         </div>
     )
