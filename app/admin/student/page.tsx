@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import ListStudent from "./list";
-import NewStudent from "./new";
+
 
 
 //clik em Estudante 
