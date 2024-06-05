@@ -38,7 +38,7 @@ export default function SaveCourse() {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(course)
    }
-   const response = await fetch("https://server20241.vercel.app/courses", requestOption)
+   const response = await fetch("https://server20241-alpha.vercel.app/courses", requestOption)
     form.reset();
     alert("Curso cadastrado")
   }

@@ -37,12 +37,13 @@ export default function SaveStudent() {
 
   async function onSubmit(student: z.infer<typeof FormSchema>) {
     console.log(student)
+    console.log("ggg")
     const requestOption={
     method: "POST",
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(student)
    }
-   const response = await fetch("https://server20241.vercel.app/students", requestOption)
+   const response = await fetch("https://server20241-alpha.vercel.app/studants", requestOption)
     form.reset();
     alert("Estudante cadastrado")
   }

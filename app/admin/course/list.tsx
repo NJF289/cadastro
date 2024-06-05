@@ -21,7 +21,7 @@ export default async function Listcourse() {
   const course = await list()
   async function list(){
     revalidatePath("/admin/course")
-   const response = await fetch("https://server20241.vercel.app/courses");
+   const response = await fetch("https://server20241-alpha.vercel.app/courses");
     return response.json();
   }
 
