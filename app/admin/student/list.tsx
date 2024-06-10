@@ -45,7 +45,7 @@ export default async function ListStudent() {
             <TableCell>{iten.email}</TableCell>
           </TableRow>
         ))}
-      </TableBody>
+      </TableBody>   
     </Table>
   )
 }
