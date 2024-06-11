@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
+
 import { Button } from "@/components/ui/button"
 import {
   Form,
@@ -16,6 +17,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { METHODS } from "http"
+import { headers } from "next/headers"
 
 const FormSchema = z.object({
   name: z.string().min(2, {
@@ -34,7 +36,7 @@ export default function SaveStudent() {
       email: "",
     },
   })
-
+  
   async function onSubmit(student: z.infer<typeof FormSchema>) {
     console.log(student)
     console.log("ggg")
@@ -43,7 +45,8 @@ export default function SaveStudent() {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(student)
    }
-   const response = await fetch("Access-Control-Allow-Origin:https://server20241-alpha.vercel.app/studants", requestOption)
+
+   const response = await fetch("https://server20241-alpha.vercel.app/studants", requestOption);
     form.reset();
     alert("Estudante cadastrado. ")   
   }
