@@ -12,7 +12,7 @@ export default function Aside({className}:any) {
                 <a href="/admin">
                     <Button variant="ghost">
                         <HomeIcon/>
-                        Home
+                        Home.
                     </Button>
                 </a>
                 <a href="/admin/student">

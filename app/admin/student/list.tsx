@@ -28,7 +28,7 @@ export default async function ListStudent() {
 
   return (
     <Table>
-      <TableCaption>Lista de Estudante.</TableCaption>
+      <TableCaption>Lista de Estudante</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead className="w-[100px]">ID</TableHead>

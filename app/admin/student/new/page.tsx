@@ -45,9 +45,9 @@ export default function SaveStudent() {
    }
    const response = await fetch("https://server20241-alpha.vercel.app/studants", requestOption)
     form.reset();
-    alert("Estudante cadastrado")
+    alert("Estudante cadastrado. ")   
   }
-  
+   
 
   return (
     <Form {...form}>

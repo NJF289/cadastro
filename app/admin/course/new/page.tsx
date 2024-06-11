@@ -40,7 +40,7 @@ export default function SaveCourse() {
    }
    const response = await fetch("https://server20241-alpha.vercel.app/courses", requestOption)
     form.reset();
-    alert("Curso cadastrado")
+    alert("Curso cadastrado:")
   }
   
 
