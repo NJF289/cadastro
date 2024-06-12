@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <a href="/admin" className=" flex justify-center">
                     <Button variant="destructive">
-                        <PersonStanding/>
+                      <PersonStanding/>
                         Cadastros
                     </Button>
                 </a>
